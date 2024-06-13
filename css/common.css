@@ -12,17 +12,211 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+/*---------------- My-Style-List --------------------*/
+button:hover {
+  background-color: #6c8cff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  /* -moz-appearance: textfield; */
+  background: #0a377e;
+  margin: 0;
+}
+
+button {
+  background-color: #4e75ff;
+  border: transparent;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  font-family: sans-serif;
+}
+
+/* --------------------------TASK 1---------------------- */
+
+#categories {
+  list-style: none;
+}
+
+#categories > li {
+  background-color: #f6f6fe;
+  margin-left: 10px;
+  width: 400px;
+  height: auto;
+}
+.item > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.item > h2 {
+  font-family: sans-serif;
+  color: #2e2f42;
+  font-size: 24;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.item > ul > li {
+  border: 1px solid #808080;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  padding-left: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+}
+/* --------------------------TASK 2---------------------- */
 
 .gallery {
   width: 1200px;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
   gap: 40px;
+  list-style: none;
 }
+
 .js-image {
   width: 360px;
   height: 300px;
+}
+
+/* --------------------------TASK 3---------------------- */
+
+.header {
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #2e2f42;
+}
+
+#name-input {
+  width: 360px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 400;
+
+  border: 1px solid #808080;
+  border-radius: 10px;
+}
+
+#name-input:hover {
+  border: 2px solid black;
+}
+
+#name-input::placeholder {
+  color: #2e2f42;
+  padding-left: 15px;
+}
+
+/* --------------------------TASK 4---------------------- */
+
+.login-form {
+  /* width: 408px;
+  height: 256px; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 480px;
+  height: 256px;
+}
+
+.login-form > label {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  color: #2e2f42;
+}
+
+label > input {
+  margin-top: 10px;
+  width: 360px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 10px;
+}
+
+label > input:hover {
+  border: 2px solid black;
+}
+
+.login-form > button {
+  background-color: #4e75ff;
+  color: #ffffff;
+  border: none;
+  width: 86px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* --------------------------TASK 5---------------------- */
+
+.widget > p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #2e2f42;
+  text-align: center;
+}
+
+.change-color {
+  width: 148px;
+  height: 40px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* --------------------------TASK 6---------------------- */
+
+#controls {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 486px;
+  height: 104px;
+  align-items: center;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+#controls > button {
+  width: 120px;
+  height: 40px;
+}
+
+#controls > input {
+  list-style: none;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 10px;
+  text-align: center;
+}
+
+[data-destroy] {
+  background-color: #ff4e4e;
+}
+
+[data-destroy]:hover {
+  background-color: #ff7070;
 }
